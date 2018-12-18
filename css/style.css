@@ -136,7 +136,7 @@ input[type="submit"]:hover{
 }
 
 form.flex_column {
-    height: 80%;
+    height: auto;
     width: 80%;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
@@ -312,7 +312,9 @@ form.flex_column {
     }
     @media screen and (max-width: 740px){
         #sign_title{
+            height: 3rem;
             font-size: 20px;
+            margin-top: 5px; 
         }
     }
     @media screen and (max-width: 580px){
@@ -387,9 +389,6 @@ form.flex_column {
         }
         #not_logged_in input[type="text"], #not_logged_in input[type="password"] {
             width: 80%;
-        }
-        #sign_up_form {
-            margin-top: -500px;
         }
     }
 
