@@ -1,0 +1,395 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #333;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+#wrapper{
+    height: auto;
+    padding: 10px;
+    overflow-y: scroll;
+}
+#not_logged_in{
+    width: 80%;
+    height: 80%;
+    margin: auto
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.flex{
+    display: flex;
+    display: -webkit-flex;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.right,.left{
+    flex: 1;
+}
+.align_inherit{
+    align-items: inherit;
+}
+#page{
+    margin: 0;
+    padding: 0;
+    background: #eae4e4;
+    font-family: Arial, Helvetica, Verdana, sans-serif;}
+
+
+/*sign up page*/
+#not_logged_in a:hover{
+    text-decoration: underline;
+}
+#sign_title{
+    margin: auto;
+    border-radius: 20px;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #3498db;
+    font-size: 50px;
+    width: 50%;
+}
+#sign_up_form{
+    width: 100vw;
+}
+
+main{
+    height: calc(95vh - 5rem);
+    align-items: center;
+    margin-top: 10px;
+}
+input[type="text"], input[type="password"]{
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 1rem;
+    font-size: 100%;
+    width: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    outline: none;
+}
+#not_logged_in input[type="text"], #not_logged_in input[type="password"]{
+    width: 90%;
+}
+
+#not_logged_in input[type="submit"]{
+    width: auto;
+    flex: 1;
+    height: 40px;
+    background: #3498db;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-weight: 500;
+    margin-left: 2px;
+    text-transform: uppercase;
+}
+input[type="submit"]:hover{
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+#sign_up_button,#sign_in_button{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#sign_in_button a,#sign_up_button a{
+    color: #3498db;
+}
+
+#sign_in_option{
+    text-align: center;
+}
+.red{
+    color: red;
+}
+.text_small{
+    font-size: small;
+    margin: 5px;
+}
+
+/*add records*/
+
+#logged_in{
+    width: 80vw;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+#add_record input[type="submit"]{
+    margin-top: 28px;
+    height: 40px;
+    background: #3498db;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+form.flex_column {
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    padding: 10px;
+    background: floralwhite;
+}
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    margin: 5px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+   }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+#poster{
+    margin: auto;
+}
+
+
+
+
+
+    #side_nav{
+        width: 30vw;
+        height: 100vh;
+        color: white;
+        background: #333;
+    }
+    #user{
+        height: 30vh;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #ccc;
+    }
+    #user_pic img{
+        border-radius: 100%;
+    }
+    #menu{
+        width: 20vw;
+        padding: 5px;
+    }
+    #menu div a{
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        height: 30px;
+        margin: 5px;
+    }
+    #main{
+        width: 70vw;
+        margin: 0 auto auto 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #media{
+        display: flex;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    #media img,#media video{
+        flex: 1;
+    }
+    .row{
+        background: white;
+        margin: 10px;
+    }
+    #media img{
+        margin-right: 5px;
+    }
+    #row_row_details{
+        padding: 5px;
+        font-size: x-small;
+    }
+    .right,.left{
+        flex: 1;
+    }
+    .text_center{
+        text-align: center;
+    }
+
+    #row_buttons{
+        display: flex;
+        border-top: 1px solid #ccc;
+    }
+    #row_buttons a{
+        text-decoration: none;
+        color: inherit;
+    }
+    #edit,#delete{
+        background: #3498db;
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        padding: 8px;
+        margin: 5px;
+    }
+    .card{
+        border-radius: 3px;
+        box-shadow:0 2px 2px 0 rgba(0,0,0,0.2);
+    }
+    .title{
+        text-transform: uppercase;
+        font-size: small;
+        color: #ff0202;
+    }
+    .tab{
+        border-bottom: 1px solid #444;
+        color: #fff;
+        border-radius: 4px;
+        padding: 2px;
+        margin: 1px;
+    }
+    .tab:hover{
+        background: #3f4f7d;        
+    }
+    .geo_loc{
+        font-size: small;
+    }
+    div#record_details{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .record_details_numeric{
+        color: #44474a;
+        background: #d7d9d9;
+        font-size: 20px;
+        padding: 1px;
+        border-radius: 100%;
+        line-height: 40px;
+    }
+    @media screen and (max-width: 740px){
+        #sign_title{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 580px){
+        #wrapper{
+            padding: 1px;
+            width: auto;
+        }
+        #main{
+            margin: 1px;
+            padding: 1px;
+        }
+        .row{
+            margin: 2px;
+            width: auto;
+        }
+        div#record_details{
+            margin-top: 5px;
+            font-size: 10px;
+            line-height: 20px;
+        }
+        .record_details_numeric{
+            font-size: 9px;
+        }
+        #menu div a{
+            margin: 2px; 
+        }
+        #media{
+            flex-direction: column;
+        }
+        #media video,img{
+            width: auto;
+            margin-top: 5px;
+        }
+        #row_details{
+            width: auto;
+            font-size: 10px;
+        }
+        #wrapper{
+            font-size: 15px;
+        }
+        #main{
+            margin: 2px auto;
+        }
+        #side_nav{
+            font-size: 10px;
+        }
+
+    }
+    @media screen and (max-width: 450px){
+        #logged_in{
+            width: auto;
+        }
+        #user_pic img{
+            width: 50px;
+            height: 50px;
+        }
+        #not_logged_in input[type="text"], #not_logged_in input[type="password"] {
+            width: 80%;
+        }
+    }
+    @media screen and (max-width: 320px){
+        main{
+            justify-content: center;
+            align-items: center;
+        }
+        #media video, #media img{
+            width: auto;
+        }
+        #sign_title{
+            font-size: 15px;
+            margin-bottom: -40px;
+        }
+        #not_logged_in input[type="text"], #not_logged_in input[type="password"] {
+            width: 80%;
+        }
+        #sign_up_form {
+            margin-top: -500px;
+        }
+    }
+
