@@ -319,6 +319,7 @@ form.flex_column {
     }
     @media screen and (max-width: 580px){
         #wrapper{
+            overflow-x: hidden;
             padding: 1px;
             width: auto;
         }
@@ -376,18 +377,17 @@ form.flex_column {
         }
     }
     @media screen and (max-width: 320px){
-        main{
-            justify-content: center;
-            align-items: center;
+        #sign_title{
+            display: none;
         }
         #media video, #media img{
             width: auto;
         }
         #sign_title{
             font-size: 15px;
-            margin-bottom: -40px;
         }
         #not_logged_in input[type="text"], #not_logged_in input[type="password"] {
+            height: 100%;
             width: 80%;
         }
     }
