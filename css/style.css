@@ -312,7 +312,9 @@ form.flex_column {
     }
     @media screen and (max-width: 740px){
         #sign_title{
+            height: 3rem;
             font-size: 20px;
+            margin-top: 5px; 
         }
     }
     @media screen and (max-width: 580px){
