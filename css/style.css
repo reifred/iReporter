@@ -388,8 +388,5 @@ form.flex_column {
         #not_logged_in input[type="text"], #not_logged_in input[type="password"] {
             width: 80%;
         }
-        #sign_up_form {
-            margin-top: -500px;
-        }
     }
 
