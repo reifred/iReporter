@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>iReporter | Forget about corruption in Africa.</title>
-    </head>
-        
-    <body id="page">
-    	<div id="wrapper" class="flex">
-        	<section id="not_logged_in" class="flex_column">
-                <header id="sign_title" class="flex_column">
-                    iReporter
-                </header>
-                <main class="flex_column align_inherit">
-                    <div id="sign_up_form">
-                        <form class="flex_column" action="UI/red_flag.html" method="post">
-                            <div><input type="text" name="user_name" placeholder="Your name" required/></div>
-                            <div><input type="text" name="user_email" placeholder="user@email.com" required/></div>
-                            <div><input type="password" name="user_password" placeholder="password" required/></div>
-                            <div><input type="password" name="password_repeat" placeholder="repeat password" required/></div>
-	                        <div id="sign_up_button"><input type="submit" value="Register"/></div>
-	                        <div id="sign_in_button"><a href="UI/sign_in.html">Already a member? Sign In</a></div>
-                        </form>
-                    </div>
-                </main>
-            </section>    	
-        </div>
-    </body>
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>iReporter | Forget about corruption in Africa.</title>
+</head>
 
+<body>
+	<div id="not_logged_in" class="container">
+    <div class="logo">Welcome to iReporter</div>
+    <div class="login-item">
+      <form action="UI/sign_in.html" method="" class="form form-login">
+        <div class="form-field">
+          <label class="user" for="fullname">Name</label>
+          <input id="fullname" type="text" class="form-input"
+          placeholder="Your Name" required>
+        </div>
+
+        <div class="form-field">
+          <label class="lock" for="email">Email</label>
+          <input id="email" type="email" class="form-input" 
+          placeholder="user@email.com" required>
+        </div>
+        <div class="form-field">
+          <label class="user" for="username">Password</label>
+          <input id="password" type="password" class="form-input"
+          placeholder="password" required>
+        </div>
+
+        <div class="form-field">
+          <label class="lock" for="corfirm_password">Corfim Password</label>
+          <input id="corfirm_password" type="password" class="form-input"
+          placeholder="password" required>
+        </div>
+        <div class="form-field">
+          <input type="submit" value="Register">
+        </div>
+        <div class="form-field">
+          Have an account with iReporter <a href="UI/sign_in.html">&nbsp;Sign In</a>
+        </div>
+
+      </form>
+    </div>
+</div>
+</body>
 </html>
