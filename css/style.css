@@ -75,11 +75,12 @@ body {
 }
 
 .login-item {
-  color: #ffff;
+  color: #fff;
   padding:25px 25px 0;
   margin: 20px 20px 0;  
   border-radius: 3px;
   width: auto;
+  overflow-y: scroll;
 }
 
 input {
@@ -349,7 +350,13 @@ div#record_details{
         padding: 1px;
         width: auto;
     }
-
+    #side_nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 30vw;
+      font-size: 10px; 
+    }
     .container{
 	    position: fixed;
 	    top: 0;
@@ -360,8 +367,11 @@ div#record_details{
 	    border-radius: 0;
     }
     #main{
-        margin: 1px;
+        margin: auto;
         padding: 1px;
+        position: fixed;
+        top: 0;
+        left: 30vw;
     }
     .row{
         margin: 2px;
@@ -386,12 +396,6 @@ div#record_details{
     }
     .wrapper{
         font-size: 15px;
-    }
-    #main{
-        margin: 2px auto;
-    }
-    #side_nav{
-        font-size: 10px;
     }
 
 }
