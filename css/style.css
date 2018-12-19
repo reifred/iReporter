@@ -79,6 +79,7 @@ body {
   padding:25px 25px 0;
   margin: 20px 20px 0;  
   border-radius: 3px;
+  width: auto;
 }
 
 input {
@@ -148,6 +149,7 @@ input {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2rem;
+  width: auto;
 }
 
 .form-field a{
@@ -328,6 +330,16 @@ div#record_details{
         padding: 1px;
         width: auto;
     }
+
+    .container{
+	    position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    width: auto;
+	    border-radius: 0;
+    }
     #main{
         margin: 1px;
         padding: 1px;
@@ -370,6 +382,23 @@ div#record_details{
 
 }
 @media screen and (max-width: 450px){
+	.login-item{
+		position: fixed;
+		left: 0;
+		right: 0;
+		padding: 50px 5px 0px;
+	}
+	.form-field{
+		width: 100%;
+	}
+	.form-login label{
+		padding: 3px;
+    	padding-left: 5px;
+    	padding-right: 5px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    }
     .wrapper{
         width: auto;
     }
@@ -378,7 +407,20 @@ div#record_details{
         height: 50px;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 340px){
+	.container{
+		font-size: 15px;
+	}
+	.form input[type="button"],
+	.form-login input[type="email"], 
+	.form input[type="number"], 
+	.form input[type="password"], 
+	.form input[type="text"], 
+	.form input[type="submit"], 
+	.form textarea {
+		padding: 15px;
+	}	
+
     #media video, #media img{
         width: auto;
     }
