@@ -140,8 +140,8 @@ input {
 }
 
 .form-login input[type=number],.form-login input[type=button]{
-  margin: 0 5px;
-}
+    margin: 5px;
+  }
 
 .form-field {
   display: -webkit-box;
@@ -324,6 +324,25 @@ div#record_details{
     border-radius: 100%;
     line-height: 40px;
 }
+
+
+@media screen and (max-width: 700px){
+  #location{
+    flex-direction: column;
+  }
+
+.form-login input[type=number],.form-login input[type=button]{
+    width: auto;
+    margin: 5px 0;  
+  }
+
+  input[type="number"]{
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+
 @media screen and (max-width: 580px){
     .wrapper{
         overflow-x: hidden;
@@ -347,11 +366,6 @@ div#record_details{
     .row{
         margin: 2px;
         width: auto;
-    }
-    div#record_details{
-        margin-top: 5px;
-        font-size: 10px;
-        line-height: 20px;
     }
     .record_details_numeric{
         font-size: 9px;
@@ -381,6 +395,7 @@ div#record_details{
     }
 
 }
+
 @media screen and (max-width: 450px){
 	.login-item{
 		position: fixed;
@@ -390,6 +405,7 @@ div#record_details{
 	}
 	.form-field{
 		width: 100%;
+    margin-bottom: 1rem;
 	}
 	.form-login label{
 		padding: 3px;
@@ -411,6 +427,10 @@ div#record_details{
 	.container{
 		font-size: 15px;
 	}
+  .form-field{
+    margin-bottom: 0.5rem;
+  }
+
 	.form input[type="button"],
 	.form-login input[type="email"], 
 	.form input[type="number"], 
@@ -420,7 +440,6 @@ div#record_details{
 	.form textarea {
 		padding: 15px;
 	}	
-
     #media video, #media img{
         width: auto;
     }
