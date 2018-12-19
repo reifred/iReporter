@@ -75,11 +75,12 @@ body {
 }
 
 .login-item {
-  color: #ffff;
+  color: #fff;
   padding:25px 25px 0;
   margin: 20px 20px 0;  
   border-radius: 3px;
   width: auto;
+  overflow-y: scroll;
 }
 
 input {
@@ -250,6 +251,7 @@ input {
     border-bottom: 1px solid #ccc;
 }
 #media img,#media video{
+    width: 20px;
     flex: 1;
 }
 .row{
@@ -317,13 +319,10 @@ div#record_details{
     font-size: 15px;
 }
 .record_details_numeric{
-    color: #44474a;
-    background: #d7d9d9;
-    font-size: 20px;
     padding: 1px;
     border-radius: 100%;
-    line-height: 40px;
-}
+    width: 25px;
+    }
 
 
 @media screen and (max-width: 700px){
@@ -350,18 +349,34 @@ div#record_details{
         width: auto;
     }
 
-    .container{
-	    position: fixed;
-	    top: 0;
-	    bottom: 0;
-	    left: 0;
-	    right: 0;
-	    width: auto;
-	    border-radius: 0;
+    div#record_details{
+        font-size: 10px;
     }
+
+    #side_nav{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30vw;
+      font-size: 10px; 
+    }
+    .container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    border-radius: 0;
+    overflow-y: scroll;
+  }
     #main{
-        margin: 1px;
+        width: 67vw;
+        margin: auto;
         padding: 1px;
+        position: absolute;
+        top: 0;
+        left: 30vw;
     }
     .row{
         margin: 2px;
@@ -376,29 +391,23 @@ div#record_details{
     #media{
         flex-direction: column;
     }
-    #media video,img{
-        width: auto;
+    #media video,#media img{
+        width: 100%;
         margin-top: 5px;
     }
     #row_details{
-        width: auto;
+        width: 100%;
         font-size: 10px;
     }
     .wrapper{
         font-size: 15px;
-    }
-    #main{
-        margin: 2px auto;
-    }
-    #side_nav{
-        font-size: 10px;
     }
 
 }
 
 @media screen and (max-width: 450px){
 	.login-item{
-		position: fixed;
+		position: absolute;
 		left: 0;
 		right: 0;
 		padding: 50px 5px 0px;
