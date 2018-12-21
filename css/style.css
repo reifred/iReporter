@@ -68,7 +68,7 @@ body {
   color: #fff;
 }
 .logo{
-  font-size:20px;
+  font-size:30px;
   text-align: center;
   padding: 20px 20px 0;
   margin:0;
@@ -80,7 +80,7 @@ body {
   margin: 20px 20px 0;  
   border-radius: 3px;
   width: auto;
-  overflow-y: scroll;
+/*  overflow-y: scroll;*/
 }
 
 input {
@@ -110,7 +110,10 @@ input {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-#not_logged_in .form-login input[type="text"], #not_logged_in .form-login input[type="password"] {
+#not_logged_in .form-login input[type="number"],
+#not_logged_in .form-login input[type="email"],
+#not_logged_in .form-login input[type="text"],
+#not_logged_in .form-login input[type="password"] {
   background-color: #ffffff;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -140,7 +143,7 @@ input {
   margin: 0 10px;
 }
 
-.form-login input[type=number],.form-login input[type=button]{
+#logged_in input[type=number],#logged_in input[type=button]{
     margin: 5px;
   }
 
@@ -163,7 +166,7 @@ input {
 
 /*drop down*/
 .dropbtn {
-    margin: 5px;
+    margin: 2px;
     background-color: #3498db;
     color: white;
     padding: 10px;
@@ -311,18 +314,19 @@ input {
     background: #197071;        
 }
 .geo_loc{
-    font-size: small;
+    font-size: x-small;
 }
 
 div#record_details{
     margin-top: 10px;
     font-size: 15px;
+    padding-left: 10px;
 }
 .record_details_numeric{
-    padding: 1px;
-    border-radius: 100%;
-    width: 25px;
-    }
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
 
 
 @media screen and (max-width: 700px){
@@ -330,7 +334,7 @@ div#record_details{
     flex-direction: column;
   }
 
-.form-login input[type=number],.form-login input[type=button]{
+#logged_in input[type=number],#logged_in input[type=button]{
     width: auto;
     margin: 5px 0;  
   }
@@ -382,9 +386,6 @@ div#record_details{
         margin: 2px;
         width: auto;
     }
-    .record_details_numeric{
-        font-size: 9px;
-    }
     #menu div a{
         margin: 2px; 
     }
@@ -414,7 +415,7 @@ div#record_details{
 	}
 	.form-field{
 		width: 100%;
-    margin-bottom: 1rem;
+    	margin-bottom: 1rem;
 	}
 	.form-login label{
 		padding: 3px;
@@ -430,6 +431,9 @@ div#record_details{
     #user_pic img{
         width: 50px;
         height: 50px;
+    }
+    .logo{
+    	font-size: 20px;
     }
 }
 @media screen and (max-width: 340px){
