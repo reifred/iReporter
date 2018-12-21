@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width">
         <meta name="viewport" content="initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="../images/icon.jpg"/>
         <title>iReporter | Forget about corruption in Africa.</title>
 </head>
 
@@ -14,18 +15,31 @@
     <div class="login-item">
       <form action="UI/sign_in.html" method="" class="form form-login">
         <div class="form-field">
-          <label class="user" for="fullname">Name</label>
-          <input id="fullname" type="text" class="form-input"
-          placeholder="Your Name" required>
+          <label class="user" for="firstName">First Name</label>
+          <input id="firstName" type="text" class="form-input"
+          placeholder="First Name" required>
         </div>
 
         <div class="form-field">
-          <label class="lock" for="email">Email</label>
+          <label class="user" for="lastName">Last Name</label>
+          <input id="lastName" type="text" class="form-input"
+          placeholder="Last Name" required>
+        </div>
+
+        <div class="form-field">
+          <label class="user" for="phoNumber">Phone Number</label>
+          <input id="phoNumber" type="number" class="form-input"
+          placeholder="0345353551" required>
+        </div>
+
+        <div class="form-field">
+          <label class="user" for="email">Email</label>
           <input id="email" type="email" class="form-input" 
           placeholder="user@email.com" required>
         </div>
+        
         <div class="form-field">
-          <label class="user" for="username">Password</label>
+          <label class="user" for="password">Password</label>
           <input id="password" type="password" class="form-input"
           placeholder="password" required>
         </div>
