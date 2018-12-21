@@ -1,6 +1,7 @@
 # iReporter
 ## Description
-IReporter is an application aiming at helping the users bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention.
+iReporter is an application that enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention.
+It was developed because corruption is a huge bane to Africa's development.
 
 #### Getting Started
 
@@ -8,15 +9,33 @@ IReporter is an application aiming at helping the users bring any form of corrup
 
 ## Features
 
-* Users can create an account with iReporter.
-* User can log in.
-* Users can create a red-flag record to bring any form of corruption to notice.
-* Users can create an intervention to call for government intervention.
-* Users can edit the red-flag or intervention details
-* Users can delete their red-flag or intervention records.
-* Users can add geolocation (Lat Long Coordinates) to their red-flag or intervention records.
-* Users can change the geolocation (Lat Long Coordinates) attached to their red-flag or intervention records.
-* Admin can change the status of a record to either under investigation, rejected (in the event of a false claim) or resolved (in the event that the claim has been investigated and resolved).
+1. Users can create an account with iReporter.
+2. User can log in.
+3. Users can create a red-flag record to bring any form of corruption to notice.
+4. Users can create an intervention to call for government intervention.
+5. Users can edit the red-flag or intervention details
+6. Users can delete their red-flag or intervention records.
+7. Users can add geolocation (Lat Long Coordinates) to their red-flag or intervention records.
+8. Users can change the geolocation (Lat Long Coordinates) attached to their red-flag or intervention records.
+9. Admin can change the status of a record to either under investigation, rejected (in the event of a false claim) or resolved (in the event that the claim has been investigated and resolved).
+
+# Optional Features
+* Users can add images to their red-flag or intervention records, to support their claims.
+* Users can add videos to their red-flag or intervention records, to support their claims.
+* The application should display a Google Map with Marker showing the red-flag or intervention location.
+* The user gets real-time email notification when Admin changes the status of their record.
+
+## Built with
+* HTML5
+* CSS3
+
+## Tools Used
+* Pivotal Tracker
+* Sublime Text Editor
+* Github
+
+## Demo
+The link to the ***Gh-Pages*** demostrating the application can be found [here](https://reifred.github.io/iReporter/)
 
   ### Authors
 Mugerwa Fred
