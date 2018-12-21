@@ -35,7 +35,7 @@ It was developed because corruption is a huge bane to Africa's development.
 * Github
 
 ## Demo
-The link to the ***Gh-Pages*** demostrating the application can be found [here](https://https://reifred.github.io/iReporter/)
+The link to the ***Gh-Pages*** demostrating the application can be found [here](https://reifred.github.io/iReporter/)
 
   ### Authors
 Mugerwa Fred
