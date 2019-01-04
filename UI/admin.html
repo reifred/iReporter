@@ -7,32 +7,34 @@
 	    <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="shortcut icon" href="../images/icon.jpg"/>
         <title>iReporter | Forget about corruption in Africa.</title>
-
 </head>
 <body>
 	<div id="logged_in" class="wrapper flex">
 			<section id="side_nav" class="flex_column">
 				<div id="user" class="card_header flex_column">
 					<div id="user_pic">
-						<img width="100px" height="100px;" src="../images/image1.jpg">
+						<img width="100px" height="100px;" src="../images/user.jpg">
 					</div>
 					<div id="user_details" class="text_center card_header_details">
 						<p>Admin name</p>
 						<p>admin@email.com</p>
 					</div>
 				</div>
-				<div id="menu">
-					<div class="tab"><a href="sign_in.html">Log Out</a></div>
-				</div>
-				<div id="record_details">
-					<div>Resolved records</div>
-					<div class="record_details_numeric">20</div>
-					<div>Under investigation records</div>
-					<div class="record_details_numeric">30</div>
-					<div>Drafted records</div>
-					<div class="record_details_numeric">10</div>
-					<div>Rejected records</div>
-					<div class="record_details_numeric">5</div>
+				<div id="menu" class="card">
+					<div class="tab-title">Number of:</div>
+					<div class="tab">
+						<a href="#">Redflags</a>
+						<span>20</span>
+					</div>
+					<div class="tab">
+						<a href="#">Intervention</a>
+						<span>10</span>
+					</div>
+					<div class="tab">
+						<a href="#">Users</a>
+						<span>1200</span>
+					</div>
+					<div class="tab"><a href="../index.html">Log Out</a></div>
 				</div>
 			</section>
 			<section id="main" class="flex_column">
@@ -47,10 +49,13 @@
 						<div id="row_row_details" class="flex">
 							<div class="right text_center">
 								<div class="title">Bad roads</div>
-								<div class="text_center geo_loc">Geo-loc: long-122 lat- 333</div>
+								<div class="geo_loc">
+									long:<i id="longValues"> 122</i>
+									lat:&nbsp;<i id="latValues">31111133</i>
+								</div>
 								<div class="flex text_center">
 									<div class="right">Red Flag</div>
-									<div class="left">Status</div>
+									<div class="left">Pending</div>
 								</div>
 							</div>
 							<div class="left">
@@ -60,15 +65,16 @@
 							</div>
 						</div>
 						<div id="row_buttons" class="text_center">
-							<div class="dropdown">
-							  <button class="dropbtn">Change Status</button>
+							<div class="dropdown left">
+							  <button class="dropbtn">Update</button>
 							  <div class="dropdown-content">
+							    <a href="#">Resolved</a>
 							    <a href="#">Investigation</a>
-							    <a href="#">Drafted</a>
+							    <a href="#">Draft</a>
 							    <a href="#">Rejected</a>
 							  </div>
 							</div>							
-							<div id="poster" class="flex center">Posted by: user</div>
+							<div id="poster" class="right">Posted by: user</div>
 						</div>
 					</div>
 				</div>
@@ -83,10 +89,13 @@
 						<div id="row_row_details" class="flex">
 							<div class="right text_center">
 								<div class="title">Corruption</div>
-								<div class="text_center geo_loc">Geo-loc: long-122 lat- 333</div>
+								<div class="geo_loc">
+									long:<i id="longValues"> 122</i>
+									lat:&nbsp;<i id="latValues">31111133</i>
+								</div>
 								<div class="flex text_center">
 									<div class="right">Intervention</div>
-									<div class="left">Status</div>
+									<div class="left">Pending</div>
 								</div>
 							</div>
 							<div class="left">
@@ -96,15 +105,16 @@
 							</div>
 						</div>
 						<div id="row_buttons" class="text_center">
-							<div class="dropdown">
-							  <button class="dropbtn">Change Status</button>
+							<div class="dropdown left">
+							  <button class="dropbtn">Update</button>
 							  <div class="dropdown-content">
+							    <a href="#">Resolved</a>
 							    <a href="#">Investigation</a>
-							    <a href="#">Drafted</a>
+							    <a href="#">Draft</a>
 							    <a href="#">Rejected</a>
 							  </div>
 							</div>							
-							<div id="poster" class="flex center">Posted by: user</div>
+							<div id="poster" class="right">Posted by: user</div>
 						</div>
 					</div>
 				</div>
@@ -119,10 +129,13 @@
 						<div id="row_row_details" class="flex">
 							<div class="right text_center">
 								<div class="title">Bad roads</div>
-								<div class="text_center geo_loc">Geo-loc: long-122 lat- 333</div>
+								<div class="geo_loc">
+									long:<i id="longValues"> 122</i>
+									lat:&nbsp;<i id="latValues">31111133</i>
+								</div>
 								<div class="flex text_center">
 									<div class="right">Red Flag</div>
-									<div class="left">Status</div>
+									<div class="left">Pending</div>
 								</div>
 							</div>
 							<div class="left">
@@ -132,17 +145,17 @@
 							</div>
 						</div>
 						<div id="row_buttons" class="text_center">
-							<div class="dropdown">
-							  <button class="dropbtn">Change Status</button>
+							<div class="dropdown left">
+							  <button class="dropbtn">Update</button>
 							  <div class="dropdown-content">
+							    <a href="#">Resolved</a>
 							    <a href="#">Investigation</a>
-							    <a href="#">Drafted</a>
+							    <a href="#">Draft</a>
 							    <a href="#">Rejected</a>
 							  </div>
 							</div>							
-							<div id="poster" class="flex center">Posted by: user</div>
+							<div id="poster" class="right">Posted by: user</div>
 						</div>
-					</div>
 				</div>
 				<div class="row card">
 					<div id="media">
@@ -155,10 +168,13 @@
 						<div id="row_row_details" class="flex">
 							<div class="right text_center">
 								<div class="title">Bad roads</div>
-								<div class="text_center geo_loc">Geo-loc: long-122 lat- 333</div>
+								<div class="geo_loc">
+									long:<i id="longValues"> 122</i>
+									lat:&nbsp;<i id="latValues">31111133</i>
+								</div>
 								<div class="flex text_center">
 									<div class="right">Intervention</div>
-									<div class="left">Status</div>
+									<div class="left">Pending</div>
 								</div>
 							</div>
 							<div class="left">
@@ -168,15 +184,16 @@
 							</div>
 						</div>
 						<div id="row_buttons" class="text_center">
-							<div class="dropdown">
-							  <button class="dropbtn">Change Status</button>
+							<div class="dropdown left">
+							  <button class="dropbtn">Update</button>
 							  <div class="dropdown-content">
+							    <a href="#">Resolved</a>
 							    <a href="#">Investigation</a>
-							    <a href="#">Drafted</a>
+							    <a href="#">Draft</a>
 							    <a href="#">Rejected</a>
 							  </div>
 							</div>							
-							<div id="poster" class="flex center">Posted by: user</div>
+							<div id="poster" class="right">Posted by: user</div>
 						</div>
 					</div>
 				</div>
