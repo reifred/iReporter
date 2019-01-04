@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,38 +8,54 @@
 	    <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="shortcut icon" href="../images/icon.jpg"/>
         <title>iReporter | Forget about corruption in Africa.</title>
-
-<style type="text/css">
-</style>
 </head>
 <body>
 	<div id="logged_in" class="wrapper flex">
 			<section id="side_nav" class="flex_column">
 				<div id="user" class="card_header flex_column">
 					<div id="user_pic">
-						<img width="100px" height="100px;" src="../images/image1.jpg">
+						<img width="100px" height="100px;" src="../images/user.jpg">
 					</div>
 					<div id="user_details" class="text_center card_header_details">
 						<p>User name</p>
 						<p>user@email.com</p>
 					</div>
 				</div>
-				<div id="menu">
+				<div id="menu" class="card">
+					<div class="tab-title">Go to</div>
 					<div class="tab"><a  href="red_flag.html">Red Flag</a></div>
 					<div class="tab"><a href="intervention.html">Intervention</a></div>
-					<div class="tab"><a  href="create_red_flag.html">Add Red Flag</a></div>
-					<div class="tab"><a href="create_intervention.html">Add Intervention</a></div>
-					<div class="tab"><a href="sign_in.html">Log Out</a></div>
-				</div>
-				<div id="record_details">
-					<div>Resolved records</div>
-					<div class="record_details_numeric">20</div>
-					<div>Under investigation records</div>
-					<div class="record_details_numeric">30</div>
-					<div>Drafted records</div>
-					<div class="record_details_numeric">10</div>
-					<div>Rejected records</div>
-					<div class="record_details_numeric">5</div>
+					<div class="tab-title">Add</div>
+					<div class="tab"><a  href="create_red_flag.html">Red Flag</a></div>
+					<div class="tab"><a href="create_intervention.html">Intervention</a></div>
+					<button class="collapsible">Show Records</button>
+					<div class="records_content">
+					<div class="records text_center">
+						<a href="#">
+							<div class="record-title">Resolved</div>
+							<div>5</div>
+						</a>
+					</div>
+					<div class="records text_center">
+						<a href="#">
+							<div class="record-title">Draft</div>
+							<div>5</div>
+						</a>
+					</div>
+					<div class="records text_center">
+						<a href="#">
+							<div class="record-title">Investigation</div>
+							<div>5</div>
+						</a>
+					</div>
+					<div class="records text_center">
+						<a href="#">
+							<div class="record-title">Rejected</div>
+							<div>5</div>
+						</a>
+					</div>
+					</div>
+					<div class="tab"><a href="../index.html">Log Out</a></div>
 				</div>
 			</section>
 			<section id="main" class="flex_column">
@@ -51,12 +68,15 @@
 					</div>
 					<div id="row_details">
 						<div id="row_row_details" class="flex">
-							<div class="right text_center">
+							<div class="right text_center about">
 								<div class="title">Bad roads</div>
-								<div class="text_center geo_loc">Geo-loc: long-122 lat- 333</div>
+								<div class="geo_loc">
+									long:<i id="longValues"> 122</i>
+									lat:&nbsp;<i id="latValues">31111133</i>
+								</div>
 								<div class="flex text_center">
 									<div class="right">Red Flag</div>
-									<div class="left">Status</div>
+									<div class="left">Pending</div>
 								</div>
 							</div>
 							<div class="left">
@@ -66,8 +86,14 @@
 							</div>
 						</div>
 						<div id="row_buttons" class="text_center">
-							<div id="edit" class="right"><a href="#">Edit</a></div>
-							<div id="delete" class="left"><a href="#">Delete</a></div>
+							<div class="dropdown left">
+							  <button class="dropbtn">Update</button>
+							  <div class="dropdown-content">
+							    <a href="#" onclick="openForm();" >Location</a>
+							    <a onclick="openForm();" >Comment</a>
+							  </div>
+							</div>							
+							<div id="delete" class="right"><a>Delete</a></div>
 						</div>
 					</div>
 				</div>
@@ -80,12 +106,15 @@
 					</div>
 					<div id="row_details">
 						<div id="row_row_details" class="flex">
-							<div class="right text_center">
+							<div class="right text_center about">
 								<div class="title">Bad roads</div>
-								<div class="text_center geo_loc">Geo-loc: long-122 lat- 333</div>
+								<div class="geo_loc">
+									long:<i id="longValues"> 122</i>
+									lat:&nbsp;<i id="latValues">31111133</i>
+								</div>
 								<div class="flex text_center">
 									<div class="right">Red Flag</div>
-									<div class="left">Status</div>
+									<div class="left">Pending</div>
 								</div>
 							</div>
 							<div class="left">
@@ -95,8 +124,14 @@
 							</div>
 						</div>
 						<div id="row_buttons" class="text_center">
-							<div id="edit" class="right"><a href="#">Edit</a></div>
-							<div id="delete" class="left"><a href="#">Delete</a></div>
+							<div class="dropdown left">
+							  <button class="dropbtn">Update</button>
+							  <div class="dropdown-content">
+							    <a href="#" onclick="openForm();" >Location</a>
+							    <a onclick="openForm();" >Comment</a>
+							  </div>
+							</div>							
+							<div id="delete" class="right"><a>Delete</a></div>
 						</div>
 					</div>
 				</div>
@@ -109,12 +144,15 @@
 					</div>
 					<div id="row_details">
 						<div id="row_row_details" class="flex">
-							<div class="right text_center">
+							<div class="right text_center about">
 								<div class="title">Bad roads</div>
-								<div class="text_center geo_loc">Geo-loc: long-122 lat- 333</div>
+								<div class="geo_loc">
+									long:<i id="longValues"> 122</i>
+									lat:&nbsp;<i id="latValues">31111133</i>
+								</div>
 								<div class="flex text_center">
 									<div class="right">Red Flag</div>
-									<div class="left">Status</div>
+									<div class="left">Pending</div>
 								</div>
 							</div>
 							<div class="left">
@@ -124,8 +162,14 @@
 							</div>
 						</div>
 						<div id="row_buttons" class="text_center">
-							<div id="edit" class="right"><a href="#">Edit</a></div>
-							<div id="delete" class="left"><a href="#">Delete</a></div>
+							<div class="dropdown left">
+							  <button class="dropbtn">Update</button>
+							  <div class="dropdown-content">
+							    <a href="#" onclick="openForm();" >Location</a>
+							    <a onclick="openForm();" >Comment</a>
+							  </div>
+							</div>							
+							<div id="delete" class="right"><a>Delete</a></div>
 						</div>
 					</div>
 				</div>
@@ -138,12 +182,15 @@
 					</div>
 					<div id="row_details">
 						<div id="row_row_details" class="flex">
-							<div class="right text_center">
+							<div class="right text_center about">
 								<div class="title">Bad roads</div>
-								<div class="text_center geo_loc">Geo-loc: long-122 lat- 333</div>
+								<div class="geo_loc">
+									long:<i id="longValues"> 122</i>
+									lat:&nbsp;<i id="latValues">31111133</i>
+								</div>
 								<div class="flex text_center">
 									<div class="right">Red Flag</div>
-									<div class="left">Status</div>
+									<div class="left">Pending</div>
 								</div>
 							</div>
 							<div class="left">
@@ -153,13 +200,50 @@
 							</div>
 						</div>
 						<div id="row_buttons" class="text_center">
-							<div id="edit" class="right"><a href="#">Edit</a></div>
-							<div id="delete" class="left"><a href="#">Delete</a></div>
+							<div class="dropdown left">
+							  <button class="dropbtn">Update</button>
+							  <div class="dropdown-content">
+							    <a href="#" onclick="openForm();" >Location</a>
+							    <a onclick="openForm();" >Comment</a>
+							  </div>
+							</div>							
+							<div id="delete" class="right"><a>Delete</a></div>
 						</div>
 					</div>
 				</div>
+			<div class="chat-popup" id="myForm">
+				<form action="" class="form-container">
+					<textarea placeholder="Type Comment here..." name="msg"></textarea>
+					<button type="submit" class="btn">Update</button>
+					<button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+				</form>
+			</div>
 
-			</section>
+		</section>
 	</div>
+
+<script type="text/javascript">
+		function openForm(){
+			document.getElementById("myForm").style.display = "block";
+		}
+		function closeForm(){
+			document.getElementById("myForm").style.display = "none";
+		}
+
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+		for (i=0; i<coll.length; i++){
+			coll[i].addEventListener("click", function(){
+				this.classList.toggle("active");
+				var records_content = this.nextElementSibling;
+				if(records_content.style.display === "block"){
+					records_content.style.display = "none";
+				}else{
+					records_content.style.display = "block";
+				}
+			});
+		}
+</script>
+
 </body>
 </html>
