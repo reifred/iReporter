@@ -247,12 +247,23 @@ input {
     width: 30vw;
     color: white;
     background: #13090996;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 99vh;
 }
+
+.profile_content{
+	margin-top: 10px;
+	display: none;
+	height: 30vh;
+	overflow-y: scroll;
+	border-bottom: 1px solid #ccc;
+}
+
 #user{
     height: 30vh;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #ccc;
 }
 #user_pic img{
     border-radius: 100%;
@@ -321,11 +332,11 @@ input {
     color: #fff;
     border-radius: 4px;
     padding: 8px;
-    margin: 5px;
+    margin: 3px;
 }
 
 #delete:hover{
-    background: #197071;
+    background: red;
 }
 .card{
     border-radius: 3px;
@@ -400,14 +411,14 @@ div#record_details{
       border: none;
       outline: none;
       cursor: pointer;
-      width: 90%;
+      width: 80%;
       color: inherit;
         border-bottom: 1px solid #444;
         color: #fff;
         border-radius: 4px;
         padding: 2px;
         margin: 1px;
-        background-color: inherit;
+        background-color: #ffffff00;
         height: 40px;
         font-size: inherit;
       }
@@ -417,8 +428,8 @@ div#record_details{
     .records_content{
       display: none;
       overflow: hidden;
-      padding: 0 18px;
-    }
+/*      padding: 0 18px;
+*/    }
     .records{
       border-bottom: 1px solid #ccc;
     }
@@ -445,7 +456,9 @@ div#record_details{
         padding: 1px;
         width: auto;
     }
-
+	.profile_content{
+		height: 20vh
+	}
     div#record_details{
         font-size: 10px;
     }
@@ -503,7 +516,11 @@ div#record_details{
 }
 
 @media screen and (max-width: 450px){
+	main{
+		margin-top: 50px;
+	}
 	.login-item{
+		width: 90vw;
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -537,6 +554,14 @@ div#record_details{
     }
 }
 @media screen and (max-width: 340px){
+.login-item{
+		width: 90vw;
+		position: absolute;
+		left: 0;
+		right: 0;
+		padding: 50px 5px 0px;
+	}
+	
 .start_page_main{
     font-weight: bold;
     font-size: 15px;
