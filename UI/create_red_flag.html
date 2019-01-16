@@ -25,9 +25,9 @@
 				placeholder="Enter your claim here..." required></textarea>
       	</div>
         <div class="form-field" id="location" >
-        	<input type="button" class="form-input" value="Auto Geolocation">
-        	<input type="number" class="form-input" name="Lat" placeholder="Lat: 1222" required>
-        	<input type="number" class="form-input" name="Long" placeholder="Long: 1222" required>
+        	<input type="button" class="form-input" onclick="getLocation();" value="Auto Geolocation">
+        	<input type="number" id="lat" class="form-input" name="Lat" placeholder="Lat: 1222" required>
+        	<input type="number" id="long" class="form-input" name="Long" placeholder="Long: 1222" required>
         </div>
         <div>
           Add an image:
@@ -47,5 +47,6 @@
       </form>
     </div>
 </div>
+<script src="../js/main.js"></script>
 </body>
 </html>

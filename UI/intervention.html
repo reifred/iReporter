@@ -12,13 +12,17 @@
 <body>
 	<div id="logged_in" class="wrapper flex">
 			<section id="side_nav" class="flex_column">
-				<div id="user" class="card_header flex_column">
-					<div id="user_pic">
-						<img width="100px" height="100px;" src="../images/user.jpg">
-					</div>
-					<div id="user_details" class="text_center card_header_details">
-						<p>User name</p>
-						<p>user@email.com</p>
+				<p class="text_center" id="user_name_top">User name</p>
+				<button class="collapsible">Profile Details</button>
+				<div class="profile_content">
+					<div id="user" class="card_header flex_column">
+						<div id="user_pic">
+							<img width="100px" height="100px;" src="../images/user.jpg">
+						</div>
+						<div id="user_details" class="text_center card_header_details">
+							<div>User name</div>
+							<div>user@email.com</div>
+						</div>
 					</div>
 				</div>
 				<div id="menu" class="card">
@@ -223,28 +227,7 @@
 		</section>
 	</div>
 
-<script type="text/javascript">
-		function openForm(){
-			document.getElementById("myForm").style.display = "block";
-		}
-		function closeForm(){
-			document.getElementById("myForm").style.display = "none";
-		}
 
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-		for (i=0; i<coll.length; i++){
-			coll[i].addEventListener("click", function(){
-				this.classList.toggle("active");
-				var records_content = this.nextElementSibling;
-				if(records_content.style.display === "block"){
-					records_content.style.display = "none";
-				}else{
-					records_content.style.display = "block";
-				}
-			});
-		}
-</script>
-
+<script src="../js/main.js"></script>
 </body>
 </html>
