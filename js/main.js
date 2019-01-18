@@ -23,8 +23,8 @@
       }
   }
   function showPosition(position){
-    document.getElementById("lat").value = position.coords.latitude;
-    document.getElementById("long").value = position.coords.longitude;    
+    document.getElementById("lat").value = "Lat: " + position.coords.latitude;
+    document.getElementById("long").value = "Long: " + position.coords.longitude;    
   }
   
     function openForm(){
