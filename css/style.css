@@ -172,7 +172,7 @@ input {
   margin: 0 10px;
 }
 
-#logged_in input[type=number],#logged_in input[type=button]{
+#lat, #long ,#logged_in input[type=button]{
     margin: 5px;
   }
 
@@ -434,12 +434,17 @@ div#record_details{
       border-bottom: 1px solid #ccc;
     }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px){
     #location{
       flex-direction: column;
     }
+    #lat, #long{
+    	width: auto;
+    }
+}
 
-  #logged_in input[type=number],#logged_in input[type=button]{
+@media screen and (max-width: 700px){
+  #lat, #long ,#logged_in input[type=button]{
       width: auto;
       margin: 5px 0;  
     }
